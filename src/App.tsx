@@ -1,16 +1,11 @@
-
-import Estate from "./components/Estates/Estate"
-
+import Estate from "./components/Estates/Estate";
 
 function App() {
-
   return (
     <>
-  
-      <Estate/>
-     
+      <Estate />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
