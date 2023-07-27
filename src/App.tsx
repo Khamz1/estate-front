@@ -11,7 +11,6 @@ function App() {
     <>
       <div className="container">
         <Header />
-        <Estate/>
       </div>
       <Routes>
         <Route path="/auth" element={<Auth />} />
