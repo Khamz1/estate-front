@@ -3,10 +3,15 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./normalize.css";
 import { Provider } from "react-redux";
-import { store } from "./app/store.ts";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+import { store } from "./app/store";
+import { BrowserRouter } from "react-router-dom";
+
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>
 );
