@@ -4,6 +4,7 @@ import Estate from "./components/Estates/Estate";
 import Auth from "./pages/Authorization/Auth";
 import Login from "./pages/Authorization/Login";
 import Header from "./components/Header/Header";
+import Comments from "./pages/Comments/Comments";
 import "./App.css";
 
 function App() {
@@ -13,12 +14,13 @@ function App() {
     <>
       <div className="container">
         <Header />
-        <Estate/>
+        {/* <Estate/> */}
       </div>
       <Routes>
+        <Route path="/comments" element={<Comments/>}/>
         <Route path="/auth" element={<Auth />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Estate />} />
+        {/* <Route path="/" element={<Estate />} /> */}
       </Routes>
     </>
   );

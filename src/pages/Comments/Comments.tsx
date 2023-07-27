@@ -5,6 +5,8 @@ import Style from './comments.module.css'
 
 function Comments() {
     const comments = useSelector((state)=>state.comments.comments)
+    console.log(comments+"DDD");
+    
   
     const dispatch = useDispatch();
     const [text, setText]=useState('')
@@ -15,8 +17,7 @@ function Comments() {
     const handleSubmit=(e)=>{
         e.preventDefault()
         dispatch(postComments(text))
-       
-        
+  
         
     }
     const handleDeleteComment=(id)=>{
