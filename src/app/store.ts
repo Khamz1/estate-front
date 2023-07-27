@@ -1,5 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit'
 import estates from '../features/estate.slice'
+
 import auth from '../features/authSlice'
 import login from '../features/loginSlice'
 export const store = configureStore({
@@ -7,6 +8,7 @@ export const store = configureStore({
     estates,
     auth,
     login
+
     }
 })
 export type RootState = ReturnType<typeof store.getState>;

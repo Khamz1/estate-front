@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import Estate from "./components/Estates/Estate";
 import Auth from "./pages/Authorization/Auth";
@@ -7,6 +8,7 @@ import "./App.css";
 
 function App() {
   return (
+
 
     <>
       <div className="container">
