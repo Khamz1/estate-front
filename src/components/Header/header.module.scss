@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  img {
+    width: 50%;
+  }
+  ul {
+    display: flex;
+    width: 50%;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+ 
+ 
+}
+.phone {
+    img {
+        width: 60%;
+    }
+  }
+.header_right {
+    display: flex;
+}
