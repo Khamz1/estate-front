@@ -4,6 +4,7 @@ import Auth from "./pages/Authorization/Auth";
 import Login from "./pages/Authorization/Login";
 import Header from "./components/Header/Header";
 import "./App.css";
+import Cards from "./components/Cards/Cards";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/auth" element={<Auth />} />
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Estate />} />
+        <Route path="/cards" element={<Cards/>} />
       </Routes>
     </>
   );

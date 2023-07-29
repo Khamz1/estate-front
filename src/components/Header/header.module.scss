@@ -17,6 +17,7 @@
 .phone {
   svg {
     width: 60%;
+
   }
 }
 .header_right {
@@ -36,4 +37,7 @@
   svg:hover {
     fill:rgb(252, 206, 150);
   }
+}
+.menu {
+  position: relative;
 }

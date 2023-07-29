@@ -4,9 +4,14 @@
 .box {
  display: flex;
  justify-content: space-between;
+ flex-wrap: wrap;
  margin: 0 50px;
   img {
     width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
   }
 }
 .card_top {
@@ -31,3 +36,60 @@
 // .favoriteIconActive {
 //   fill:rgb(252, 206, 150);
 // }
+.vertical_svg {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    padding-right: 10px;
+  }
+}
+.card {
+width: 30%;
+&:hover {
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+  transition: 0.5s;
+}
+}
+.title {
+  font-weight: 500;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    color: #B68D5C;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.card_descr {
+  margin:0 30px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  
+ li:not(:first-child) {
+    margin-bottom: 10px;
+
+ }
+}
+.button {
+  margin: 0 30px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 13px 30px;
+  background-color: #363D41;
+  border: 1px solid #363D41;
+  transition: .5s;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.3s;
+    color: #363D41;
+    background-color: white;
+  }
+}
