@@ -36,7 +36,7 @@ function Comments() {
 
   return (
     <div className={Style.allPage}>
-        <h2>Отзывы от наших клиентов</h2>
+        <h2 className={Style.Intro}>Отзывы от наших клиентов</h2>
     <div className={Style.mainCommentPage}>
  
         <div className={Style.scrollComment}>
