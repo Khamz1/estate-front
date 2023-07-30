@@ -13,14 +13,31 @@
     list-style-type: none;
     justify-content: space-between;
   }
- 
- 
 }
 .phone {
-    img {
-        width: 60%;
-    }
+  svg {
+    width: 60%;
+
   }
+}
 .header_right {
-    display: flex;
+  display: flex;
+  position: relative;
+
+  span {
+    position: absolute;
+    left: 20%;
+    padding: 2px;
+    color: white;
+    text-align: center;
+    background-color: rgb(252, 206, 150);
+    border-radius: 50%;
+    width: 20px;
+  }
+  svg:hover {
+    fill:rgb(252, 206, 150);
+  }
+}
+.menu {
+  position: relative;
 }

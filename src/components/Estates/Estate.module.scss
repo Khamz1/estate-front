@@ -1,63 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500&family=Roboto&display=swap");
+
 .box {
-  display: flex;
-  justify-content: space-between;
-  color: #2a2a2a;
-  padding: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14.5px;
-  .card {
-    position: relative;
-    background-color: #f6f6f6;
-    border-radius: 10px;
-    width: 25%;
-    height: 340px;
-    margin: 20px;
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+gap: 20px;
+ margin: 0 50px;
+  img {
+    width: 300px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    .type {
-      position: absolute;
-      right: 3%;
-      top: 10px;
-    }
-    .square {
-      position: absolute;
-      left: 3%;
-      bottom: 58px;
-    }
-    .image {
-      width: 64%;
-    }
-    .image > img {
-      width: 100%;
-      height: 100%;
-      transition: 0.9s;
-    }
-    .image > img:hover {
-      scale: 1.1;
-    }
-    .address {
-      display: flex;
-      gap: 50px;
-    }
-    .button {
-      width: 100%;
-      padding: 15px;
-      background-color: #2a2a2a;
-      border: none;
-      color: #ffffff;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      font-size: 17px;
-    }
-    .roomsCount {
-      position: absolute;
-      top: 14px;
-      left: 5%;
-    }
+    margin: 0 auto;
+    margin-bottom: 15px;
   }
 }
+.card_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  svg {
+    width: 30px;
+  }
+}
+
+/* Стили для иконки SVG, когда объект не в избранном */
+.favoriteIcon {
+  fill:rgb(252, 206, 150);/* Изначальный цвет иконки */
+  &:hover {
+    fill:rgb(252, 206, 150);
+    transition: fill 0.3s;
+  }
+}
+
+// /* Стили для иконки SVG, когда объект в избранном */
+// .favoriteIconActive {
+//   fill:rgb(252, 206, 150);
+// }
+.vertical_svg {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    padding-right: 10px;
+  }
+}
+.card {
+&:hover {
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+  transition: 0.5s;
+}
+}
+.title {
+  font-weight: 500;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    color: #B68D5C;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.card_descr {
+  margin:0 30px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  
+ li:not(:first-child) {
+    margin-bottom: 10px;
+
+ }
+}
+.button {
+  margin: 0 30px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 13px 30px;
+  background-color: #363D41;
+  border: 1px solid #363D41;
+  transition: .5s;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.3s;
+    color: #363D41;
+    background-color: white;
+  }
+}
+
